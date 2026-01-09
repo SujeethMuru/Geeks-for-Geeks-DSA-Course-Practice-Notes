@@ -1,0 +1,13 @@
+def linear_search(list, x):
+    for i in range(len(list)):
+        if list[i] == x:
+            return i
+    return -1
+
+array_1 = [1, 2, 3, 4] 
+array_2 = [10, 8, 30, 4, 5]
+array_3 = [10, 8, 30]
+
+print(linear_search(array_1, 3)) # 2
+print(linear_search(array_2, 5)) # 4
+print(linear_search(array_3, 6)) # -1
