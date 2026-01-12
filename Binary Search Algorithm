@@ -1,0 +1,31 @@
+def binary_search(list, x):
+    low = 0 
+    high = len(list) - 1
+
+    while low <= high:
+        mid = low + (high - low) // 2
+        print('x = ', x)
+        print('mid element =', list[mid])
+        #Check mid
+        if list[mid] == x:
+            return mid
+        
+        #Check if mid is less that target, ignore left half
+        elif list[mid] < x:
+            low = mid + 1
+        
+        #If mid is mid is higher than target, ignore right half
+        else:
+            high = mid - 1
+    
+    return -1
+
+
+array = [2, 5, 8, 12, 16, 23, 38, 56, 72, 91]
+x = 23
+result = binary_search(array, x)
+
+if result != -1:
+    print("Element is present at index", result)
+else:
+    print("Element is not present in array")
