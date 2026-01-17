@@ -1,0 +1,78 @@
+Best Case
+
+Definition:
+The minimum time an algorithm takes for the most favorable input.
+
+Big-O notation:
+Often written as Ω (Omega)
+
+Example (Linear Search):
+
+- Target is at index 0
+
+- Only 1 comparison
+
+Time Complexity:
+
+Ω(1)
+
+Why it matters:
+
+- Shows theoretical minimum
+
+- Rarely reflects real-world performance
+
+
+Average Case
+
+Definition:
+The expected time over all possible inputs (assuming a probability distribution).
+
+Big-O notation:
+Often written as Θ (Theta)
+
+Example (Linear Search):
+
+Target is somewhere in the middle
+
+~n / 2 comparisons
+
+Time Complexity:
+
+Θ(n)
+
+Why it matters:
+
+Best representation of typical performance
+
+Often hardest to calculate
+
+Worst Case (Most used)
+
+Definition:
+The maximum time an algorithm can take for the most unfavorable input.
+
+Big-O notation:
+Written as O (Big-O)
+
+Example (Linear Search):
+
+Target is last element or not present
+
+n comparisons
+
+Time Complexity:
+
+O(n)
+
+Why it matters:
+
+- Guarantees upper bound
+
+- Used heavily in interviews & exams
+
+- Helps design safe and scalable systems
+
+Best case = lucky input
+Average case = realistic input
+Worst case = unlucky input (but guaranteed bound)
